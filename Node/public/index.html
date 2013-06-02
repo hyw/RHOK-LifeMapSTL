@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>LifeMap</title>
+  </head>
+  <body>
+    <form id="mapper">
+      <div>
+        <label for="minx">Min X</input>
+        <input type="text" placeholder="min x" id="minx" value="-90.31879897912145">
+      </div>
+      <div>
+        <label for="miny">Min Y</input>
+        <input type="text" placeholder="min y" id="miny" value="38.5386521209452">
+      </div>
+      <div>
+        <label for="maxx">Max X</label>
+        <input type="text" placeholder="max y" id="maxx" value="-90.18094238022623">
+      </div>
+      <div>
+        <label>Max Y</label>
+        <input type="text" placeholder="max y" id="maxy" value="38.766965830637346">
+      </div>
+      <div>
+        <label>Resolution</label>
+        <input type="text" id="resolution" value=".5">
+      </div>
+      <input type="submit" value="get">
+    </form>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
+    <script src="/lifemap.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=geometry"></script>
+  </body>
+</html>
