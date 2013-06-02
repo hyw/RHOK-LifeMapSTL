@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+	<head>
 		<title>LifeMap</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
@@ -9,22 +9,22 @@
 		<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 		<style type="text/css">
 		body {
-      		padding-top: 20px;
-      	}
+      			padding-top: 20px;
+      		}
 		/* Custom container */
-      	.container {
-       		margin: 0 auto;
-        	max-width: 1000px;
-        	width: auto;
-      	}
-      	/* Custom header */
-      	.header h3 {
-      		display: run-in;
-      	}
-      	.header p {
-      		display: block;
-      	}
-      	/* Customize the navbar links to be fill the entire space of the .navbar */
+      		.container {
+       			margin: 0 auto;
+        		max-width: 1000px;
+        		width: auto;
+      		}
+      		/* Custom header */
+      		.header h3 {
+      			display: run-in;
+      		}
+      		.header p {
+      			display: block;
+      		}
+      		/* Customize the navbar links to be fill the entire space of the .navbar */
 		.navbar .navbar-inner {
 			padding: 0;
 		}
@@ -53,6 +53,7 @@
 			border-radius: 0 3px 3px 0;
 		}
 		</style>
+		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="./assets/js/bootstrap.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	</head>
@@ -89,8 +90,9 @@
 		var map;
 		function initialize() {
 			var mapOptions = {
-				zoom: 8,
-				center: new google.maps.LatLng(-34.397, 150.644),
+				zoom: 12,
+				center: new google.maps.LatLng(38.6528089758,-90.2498706797),
+				disableDefaultUI: true;
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
